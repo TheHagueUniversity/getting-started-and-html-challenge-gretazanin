@@ -6,15 +6,17 @@
 <link href="_css/styles.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-<h2>HTML Essential Training Creating Links</h2>
-<nav role ="navigation">
-   
-  <a href="intro.html" title="Introduction to HTML">Introduction to HTML</a>
-    <a href="syntax.html" title="HTML syntax">HTML syntax</a>
-    <a href="links.html" title="Creating links">Creating links</a>
-    <a href="reference.html" title="HTML Reference">HTML reference</a>
-    <a href="next.html" title="Next steps">Next steps</a> 
-    </nav>
+<h3> HTML Essential Training </h3>
+<h1> Creating Links </h1>
+<nav>
+	<ul>
+  <li><a href="intro.htm" title="Introduction to HTML">Introduction to HTML</a></li>
+  <li><a href="syntax.htm" title="HTML syntax">HTML syntax</a></li>
+  <li><a href="links.htm" title="Creating links">Creating links</a></li>
+  <li><a href="reference.htm" title="HTML Reference">HTML reference</a></li>
+  <li><a href="next.htm" title="Next steps">Next steps</a></li>
+	</ul>
+</nav>
 
 <article>
 <p>Perhaps the most important aspect of HTML is the ability to link from one document to another. This is the basic concept underlying   the web and without this functionality the World Wide Web would  ot exist. </p> </article>
@@ -59,7 +61,7 @@
 <pre>&lt;a href=&rdquo;../contact.htm&rdquo; title=&rdquo;our contact page&rdquo;&gt;Contact us&lt;/a&gt;</pre>
 <section> 
 	<p> This link would move up from the current directory and find the contact.htm page in the parent directory. You can use as many of these &ldquo;../&rdquo; as you need to move up and properly resolve the link.</p>
-<section>
+    </section>section>
 
 <h3>Site-Root Relative Links</h3>
 <section>
@@ -80,9 +82,10 @@
 <section>
 	<p> Note the hash symbol (#) prior to the ID value. This tells the browser to look for an element with the ID value that follows.You can link to fragment identifiers on external pages as well. Simply append the fragment identifier to the URL and the link will jump to not only to that page, but that specific section as well.</p>
 </section>
+
 <pre>&lt;a href=&rdquo;faq.htm#camp&rdquo;&gt;Read our FAQ on camping.&lt;/a&gt;</pre>
 <footer role="contentinfo"> 
 	<p>&copy; <a href= "http://lynda.com" title="Lynda.com" target="_blank">Lynda.com</a> | follow me and lynda.com on Twitter! <a href="http://twitter.com/jameswillweb"> @jameswillweb </a> <a href="http://twitter.com/lynda" title="Follow Lynda.com on Tiwtter">  @lynda.com </a> </p>
 </footer>
-</body>
-</html>
+	</body>
+		</html>
