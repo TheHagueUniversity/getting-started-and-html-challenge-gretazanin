@@ -7,15 +7,23 @@
 </head>
 <body>
 <h2>HTML Essential Training HTML Syntax</h2>
+<nav>
 <p><a href="#" title="Introduction to HTML">Introduction to HTML</a></p>
 <p><a href="#" title="HTML syntax">HTML syntax</a></p>
 <p><a href="#" title="Creating links">Creating links</a></p>
 <p><a href="#" title="HTML Reference">HTML reference</a></p>
 <p><a href="#" title="Next steps">Next steps</a></p>
-<p>Because HTML is often the people&rsquo;s first experience with coding, there can be a fair amount of apprehension about learning it. Thankfully, HTML syntax is relatively simple and easy to learn. Most people can learn the basics of HTML and begin coding it within the same day.</p>
-<h3>A markup language</h3>
+</nav>
+
+<article>
+<p>Because HTML is often the people&rsquo;s first experience with coding, there can be a fair amount of apprehension about learning it. Thankfully, HTML syntax is relatively simple and easy to learn. Most people can learn the basics of HTML and begin coding it within the same day.</p> </article>
+
+<h3> A markup language </h3>
+
 <p>HTML is a markup language. That means that content on the page is &ldquo;marked up&rdquo; by tags which identify the content inside of them. A paragraph, for example, can be identified by placing the &ldquo;&lt;p&gt;&rdquo; opening tag prior to the paragraphs content and the &ldquo;&lt;/p&gt;&rdquo; closing tag at the end of a paragraph. The full paragraph would look like this:</p>
+
 <pre><code>&lt;p&gt;This is a paragraph.&lt;/p&gt;</code></pre>
+
 <p>Tags consist of a left-angle bracket (&lt;) followed by a character or characters that identify the tag (the &ldquo;p&rdquo; for paragraph) and a closing right-angle bracket (&gt;). The closing tags for an element are exactly the same as an opening tag, except that a forward slash (/) will precede the tags characters.<br>
   Although most elements require an opening and a closing tag, the closing tag is optional for some elements and not required at all for others. While there are exceptions to the rule, for the most part any element that contains content inside the opening and closing tags also requires a closing tag.</p>
 <h3>Basic document structure</h3>
@@ -53,7 +61,7 @@ HTML5
   HTML5, on the other hand, expands the concept of content types to seven different categories of content, with some elements belonging to multiple categories. This replaces the concept of block-level and inline-level elements and adds some additional nesting syntax rules. For the most part, the rules around nesting elements make sense and are fairly easy to pick up. You should be prepared, however, for it to take some time before you fully understand all of the rules surrounding nesting elements. One way to making sure to your code is structured properly is to validate your code through a service like the W3C&rsquo;s Markup Validation service.</p>
 <h5>Commenting code</h5>
 <p>Often it is helpful to leave notes to yourself or other developers within your code. Perhaps you want to remind yourself what a certain script does, or remind a co-worker how to properly structure specific content. To do this, you&rsquo;ll use comments. Comments should appear on their own line, and typically appear directly before or after the code they refer to. Comments begin with a left-angle bracket, an exclamation point, and two hyphens (&lt;!--) and end with two hyphens followed by a right-angle bracket (--&gt;).</p>
-<h5>Comment syntax:</h5>k
+<h5>Comment syntax:</h5>
 <pre><code>&lt;!-- This is a comment --&gt;</code></pre>
 <h5>Using special characters</h5>
 <p>Certain characters are reserved in HTML, meaning that you shouldn&rsquo;t use them outside of their specific purpose. The angle brackets, for example, are reserved for tags, and using them anywhere outside of a tag could cause parsing errors in browsers. However, you can still use these reserved characters and other special characters or symbols by using what is known as a <strong>named character entity</strong>. These special codes tell the user agent to replace the entity code with a specific character. These entities begin with an ampersand (&amp;) followed by the entity name and end with a semicolon (;). To display an ampersand, for example, you would type <strong>&amp;amp;</strong> in place of the actual ampersand. You can find named character entity lists within the HTML specifications, although the format for them can be a bit hard to read. You can also find a useful list of character entities on the <a href="reference.html#named">HTML Reference</a> page, and a more comprehensive list on Wikipedia.</p>
